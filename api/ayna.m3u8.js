@@ -143,6 +143,6 @@ module.exports = async (req, res) => {
     return res.status(500).json({ error: "Stream not available" });
   }
 
-  res.setHeader("Access-Control-Allow-Origin", "https://bostaflix.vercel.app/");
+  res.setHeader("Access-Control-Allow-Origin", "https://bostaflix.vercel.app");
   res.redirect(302, url);
 };
